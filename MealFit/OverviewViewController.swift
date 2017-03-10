@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  OverviewViewController.swift
 //  MealFit
 //
 //  Created by Danny Garcia on 12/15/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class OverviewViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
