@@ -26,11 +26,19 @@ class AddMealTableViewController: UITableViewController, UISearchBarDelegate {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+      
+      let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddMealTableViewController.dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
       
       loadSampleMeals()
       searchResults = foodItemData
       searchBar.delegate = self
+    }
+  
+    func dismissKeyboard() {
+      view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,10 +60,7 @@ class AddMealTableViewController: UITableViewController, UISearchBarDelegate {
       } else {
         return items.count
       }
-        // #warning Incomplete implementation, return the number of rows
-        //      return items.count
     }
-
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cellIdentifier = "MealTableViewCell"
@@ -74,7 +79,6 @@ class AddMealTableViewController: UITableViewController, UISearchBarDelegate {
       
       // Fetches the appropriate meal for the data source layout.
       //This code fetches the appropriate meal from the meals array.
-      //      let item = items[indexPath.row]
       
       // Configure the cell...
       cell.mealNameLabel.text = "\(item.name)"
