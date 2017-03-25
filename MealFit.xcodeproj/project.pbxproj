@@ -18,6 +18,7 @@
 		304357701E0459F00085A710 /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3043576F1E0459F00085A710 /* MealTableViewCell.swift */; };
 		304357721E0466700085A710 /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304357711E0466700085A710 /* MealTableViewController.swift */; };
 		304357741E0466E70085A710 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304357731E0466E70085A710 /* Meal.swift */; };
+		30688B6E1E86FC0E00961DDD /* AddMealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30688B6D1E86FC0E00961DDD /* AddMealTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		3043576F1E0459F00085A710 /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MealTableViewCell.swift; path = ../MealTableViewCell.swift; sourceTree = "<group>"; };
 		304357711E0466700085A710 /* MealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		304357731E0466E70085A710 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		30688B6D1E86FC0E00961DDD /* AddMealTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddMealTableViewController.swift; path = ../AddMealTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		3000F1471E034F4B00B00DB8 /* MealFit */ = {
 			isa = PBXGroup;
 			children = (
+				30688B6D1E86FC0E00961DDD /* AddMealTableViewController.swift */,
 				3000F1481E034F4B00B00DB8 /* AppDelegate.swift */,
 				3000F14A1E034F4B00B00DB8 /* OverviewViewController.swift */,
 				3000F14E1E034F4B00B00DB8 /* Main.storyboard */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				304357721E0466700085A710 /* MealTableViewController.swift in Sources */,
+				30688B6E1E86FC0E00961DDD /* AddMealTableViewController.swift in Sources */,
 				304357701E0459F00085A710 /* MealTableViewCell.swift in Sources */,
 				3000F1491E034F4B00B00DB8 /* AppDelegate.swift in Sources */,
 				3000F1791E035FD900B00DB8 /* PantryViewController.swift in Sources */,
