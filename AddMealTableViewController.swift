@@ -28,6 +28,7 @@ class AddMealTableViewController: UITableViewController, UISearchBarDelegate {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
       
+      // hide search keyboard when user taps outside of keyboard
       let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(AddMealTableViewController.dismissKeyboard))
       tap.cancelsTouchesInView = false
       view.addGestureRecognizer(tap)
