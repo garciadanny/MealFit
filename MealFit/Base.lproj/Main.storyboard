@@ -383,7 +383,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Food" id="ptf-vn-B4G">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nLn-fq-Onl"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="nLn-fq-Onl">
+                            <connections>
+                                <action selector="cancelButton:" destination="y18-a4-0SL" id="S2t-nJ-mtg"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="478-mY-INb"/>
                     </navigationItem>
                 </viewController>
