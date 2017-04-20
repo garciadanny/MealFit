@@ -22,7 +22,7 @@ class AddFoodViewController: UIViewController {
     }
     
   @IBAction func cancelButton(_ sender: UIBarButtonItem) {
-    dismiss(animated: true, completion: nil)
+    navigationController?.popViewController(animated: true)
   }
     /*
     // MARK: - Navigation
